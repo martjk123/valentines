@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="pdiv"><p>
+        <span id="w">W</span>
+        <span id="i">i</span>
+        <span id="l">l</span>
+        <span style="margin-right:15px" id="l">l</span>
+        <span id="y">Y</span>
+        <span id="o">o</span>
+        <span style="margin-right:15px" id="u">u</span>
+        <span>b</span>
+        <span style="margin-right:15px">e</span>
+        <span>m</span>
+        <span style="margin-right:15px">y</span>
+        <span>B</span>
+        <span>i</span>
+        <span>b</span>
+        <span>i</span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span>?</span>
+    </p></div>
+  
+    <div class="container">
+
+     <div class="container2">
+      <div class="container3">
+        <div><button id="yes" onclick="yesClick();">Yes</button></div>
+        <div><button id="no" onclick="clickNo();">No</button></div>
+        <div id="image2"></div>
+      </div>
+     </div>
+
+    </div>
+     
+    <div class="divView">
+
+    <div class="container_1">
+        <div id="gif1_div"><img src="gif1.png" id="image"></div>
+        <div id="oahh"><h1 id="view">Oahhh</h1></div>
+    </div>
+
+        <h1 id="sure"></h1>
+    </div>
+    <div class="imageyes">
+        <img src="gif2.png" id="gif2">
+        <img src="gif3.png" id="gif3">
+    </div>
+
+    
+
+    <!-- <h1 id="emoji">😍</h1> -->
+    <script>
+
+        const buttonText = ["Are you sure?", "Sure na sure?", "Super sure?"];//button text
+        let noButton = 0;//button text
+     
+
+function clickNo(){
+    document.querySelector("#no").innerHTML = buttonText[noButton];//button text
+    noButton = (noButton + 1) % buttonText.length;//button text
+    
+    const yesButton = document.getElementById("yes");
+    const currentHeight = parseInt(window.getComputedStyle(yesButton).height);
+    const currentWidth = parseInt(window.getComputedStyle(yesButton).width);
+    const currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize)
+    
+    // Increase size by a certain percentage each time
+    const scaleFactor = 1.5;
+    const newHeight = currentHeight * scaleFactor;
+    const newWidth = currentWidth * scaleFactor;
+    const newFontSize = currentFontSize * scaleFactor;
+ 
+    yesButton.style.backgroundColor = "rgb(25, 214, 25);";
+    yesButton.style.height = newHeight + "px";
+    yesButton.style.width = newWidth + "px";
+    yesButton.style.fontSize = newFontSize + "px";
+}
+
+function yesClick(){
+     document.querySelector("#view").style.display = "block";
+    // document.querySelector("#emoji").style.display = "block";
+     document.querySelector("img").style.display = "block";
+     document.querySelector(".container").style.display = "none";
+     document.querySelector(".pdiv").style.display = "none";
+     document.querySelector("#gif2").style.display = "block";
+     document.querySelector("#gif3").style.display = "block";
+}
+
+    </script>
+</body>
+</html>

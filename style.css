@@ -1,0 +1,152 @@
+#no{
+    background-color:rgb(252, 3, 3);
+    border:none;
+    color:white;
+    border-radius:5px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:2em;
+    cursor:pointer;
+}
+
+#no:hover{
+    background-color:blue;
+    box-shadow:5px 10px 10px red;
+}
+
+.container{
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.container2{
+    margin-top:-20px;
+}
+
+.container3{
+    display:flex;
+    justify-content:center;
+
+}
+
+#yes{
+    margin-right:12px;
+    border:none;
+    background-color:rgb(25, 214, 25);
+    color:white;
+    border-radius:5px;
+   padding:10px;
+   padding-left:20px;
+   padding-right:20px;
+   font-size:2em;
+   cursor:pointer;
+}
+#yes:hover{
+    background-color:blue;
+    box-shadow: 5px 10px 10px rgb(1, 250, 1);
+}
+
+p{
+    display:flex;
+    cursor:pointer;
+}
+
+.pdiv{
+    margin-top:-30px;
+    display:flex;
+    justify-content:center;
+    font-size:3em;
+    color:white;
+    
+}
+
+#view{
+    color:rgb(226, 6, 6);
+    font-size:5em;
+    font-family:arial;
+    padding-top:-50px;
+    display:none;
+}
+
+.divView{
+    padding:12px;
+    /* position:absolute;/////////////// */
+    right:450px;
+}
+
+#image{
+    
+    height:100px;
+    width:100px;
+    padding-bottom:-200px;
+    /* padding-left:50px; */
+    /* position:relative;////////////////////
+    right:-180px; */
+    border-radius:40%;  
+    display:none;
+    
+}
+
+body{
+    background-color:rgb(252, 167, 232)
+}
+
+
+#w{
+  color:white;
+} #w:hover{
+    color:blue;
+}
+
+#i{
+    color:white;
+} #i:hover{
+    color:red;
+}
+
+/* #emoji{
+    font-size:10em;
+    position:absolute;
+    right:460px;
+    bottom:40px;
+    padding-top:100px;
+    
+} */
+
+#gif2{
+  height:150px;
+  border-radius:100%;
+  display:none;
+}
+
+#gif3{
+height:200px;
+border-radius:50%;
+display:none;
+}
+
+.imageyes{
+ padding-top:100px;
+display:flex;
+justify-content:space-between;
+}
+
+#oahh{
+    display:flex;
+    justify-content:center;
+    height:50px;
+}
+
+#gif1_div{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:50px;
+}
+
+.container_1{
+   
+     
+}
